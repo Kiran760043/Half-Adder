@@ -1,0 +1,17 @@
+//////////////////////////////////////////////////////////////////////////////////
+// Design Name: Half Adder
+// Engineer: kiran
+//////////////////////////////////////////////////////////////////////////////////
+`timescale 1ns / 1ps
+
+module half_adder(
+    input  wire A,
+    input  wire B,
+    output wire S,
+    output wire Co
+    );
+
+    assign S  = A ^ B;
+    assign Co = A & B;
+
+endmodule
